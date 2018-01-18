@@ -61,6 +61,6 @@ public class MyLinkedList<T> implements ILinkedList<T> {
 
     @Override
     public void insert(ILinkedList<T> newFirst) {
-        ((MyLinkedList)newFirst).next = this;
+        newFirst.setNext(this);
     }
 }
